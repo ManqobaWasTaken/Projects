@@ -8,6 +8,8 @@ While some projects are not publicly available due to university policies, I’v
 
 These projects were developed during my coursework and demonstrate my skills in various programming paradigms, algorithms, and full-stack development. While I can't share the source code due to university policies, here’s a brief overview of what I’ve worked on:
 🏆 Notable Projects
+
+
 Impasse (Java, Feb 2022)
 
     Implemented a strategy board game with a GUI.
