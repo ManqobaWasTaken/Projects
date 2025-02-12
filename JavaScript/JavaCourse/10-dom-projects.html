@@ -4,11 +4,33 @@
         <title>
             DOM Projects
         </title>
+        <style>
+            .subscribe-button {
+                border:none;
+                background-color:black;
+                color:white;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                font-weight:bold;
+                border-radius:50px;
+                cursor: pointer;
+                margin-bottom:30px;
+            }
+            .is-subscribed {
+                background-color: lightgray;
+                color:black;
+            }
+            body{
+                font-family: Arial;
+            }
+        </style>
     </head>
     <body>
         <p>Youtube Subscriube button</p>
         <button onclick="subscribe();"
-            class="js-subscribe-button"
+            class="js-subscribe-button subscribe-button"
         >Subscribe</button>
         <!--Process for JS
         1 figure out steps we need(algorithm)]
@@ -36,8 +58,10 @@
                 const buttonelement = document.querySelector('.js-subscribe-button');
                 if (buttonelement.innerText=== 'Subscribe'){ 
                     buttonelement.innerHTML='Subscribed';
+                    buttonelement.classList.add('is-subscribed')
                 } else {
                     buttonelement.innerHTML='Subscribe';
+                    buttonelement.classList.remove('is-subscribed')
                 }
             }
 
